@@ -22,7 +22,7 @@ const Randomizer = () => {
   return (
     <div className="flex flex-col gap-8 items-center">
       <h1 className="text-2xl font-bold">
-        Randomizer | {selectedType === "survivor" ? "Выжившие" : "Маньяки"}
+        Randomizer | Рандом - {selectedType === "survivor" ? "Survivors | Выжившие" : "Killers | Маньяки"}
       </h1>
 
       <motion.div
