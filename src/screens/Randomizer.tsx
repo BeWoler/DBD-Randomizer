@@ -45,10 +45,10 @@ const Randomizer = () => {
           {selectedPerks.map((perk, index) => (
             <motion.div
               key={perk.en}
-              className="bg-red-950 font-semibold text-white rounded-lg p-4 min-w-[100px] text-center"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.2 }}
+              style={{ padding: '20px', borderRadius: '8px', backgroundColor: '#450a0a', minWidth: '100px', fontWeight: '600', textAlign: 'center'}}
             >
               <div>{perk.en}</div>
               <div>{perk.ru}</div>
