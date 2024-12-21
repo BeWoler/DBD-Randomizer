@@ -19,8 +19,6 @@ const Randomizer = () => {
     }, 500);
   };
 
-  console.log(selectedType, selectedCharacter)
-
   return (
     <div className="flex flex-col gap-8 items-center">
       <h1 className="text-2xl font-bold">
@@ -47,7 +45,7 @@ const Randomizer = () => {
           {selectedPerks.map((perk, index) => (
             <motion.div
               key={perk.en}
-              className="bg-purple-900 font-semibold text-white rounded-lg p-4 min-w-[100px] text-center"
+              className="bg-red-950 font-semibold text-white rounded-lg p-4 min-w-[100px] text-center"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.2 }}
@@ -64,7 +62,7 @@ const Randomizer = () => {
         disabled={isRolling}
         className="bg-red-950 font-semibold text-white w-fit px-4 py-2 rounded hover:bg-red-900 transition-all disabled:bg-gray-400"
       >
-        {isRolling ? "Bzzzz..." : "Random"}
+        {isRolling ? "Bzzzz... | Бзззз..." : "Random | Рандом"}
       </button>
     </div>
   );
